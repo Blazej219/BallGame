@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BallGame</title>
+
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h1>Ball Game</h1>
+    </header>
+    <article>
+        <form>
+            <label>Podaj promień piłki: <input type="number" id="rozm" min="1" max="250" placeholder="0-250"></label>
+            <label>Podaj grubość linii: <input type="number" id="gr" min="1" max="10" value="1" placeholder="0-10"></label>
+            <label>Wybierz Kolor: <select id="color">
+                <option value="black">Czarny</option>
+                <option value="red">Czerwony</option>
+                <option value="green">Zielony</option>
+                <option value="yellow">Żółty</option>
+                <option value="blue">Niebieski</option>
+                <option value="pink">Różowy</option>
+            </select></label><br>
+            <input type="button" value="Wrzuć Kulkę" onclick="DrawBall()">
+        </form>
+        <div id="canva">
+            <canvas id="BallGame" height="500px" width="700px;">
+            </canvas>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
